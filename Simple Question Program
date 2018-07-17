@@ -1,0 +1,6 @@
+ad = input("Adinizi Giriniz:\n")
+soyad = input("Soyadinizi Giriniz:\n")
+yas = int(input("Yasinizi Giriniz:\n"))
+
+print("Adiniz-Soyadiniz:", ad, soyad)
+print("Yasiniz:", yas)
