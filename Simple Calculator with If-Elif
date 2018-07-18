@@ -1,0 +1,21 @@
+print("İki Sayi Arasinda İslemler:\n")
+
+sayi1=float(input("Birinci Sayiyi Giriniz:\n"))
+sayi2=float(input("İkinci Sayiyi Giriniz:\n"))
+secim = input("Seciminiz(+,-,*,/):\n")
+
+
+if secim=='+':
+    sonuc=sayi1+sayi2
+    print("Sonucunuz:", sonuc)
+elif secim=='-':
+    sonuc=sayi1-sayi2
+    print("Sonucunuz:", sonuc)
+elif secim == '*':
+    sonuc = sayi1 * sayi2
+    print("Sonucunuz:", sonuc)
+elif secim=='/':
+    sonuc=sayi1/sayi2
+    print("Sonucunuz:", sonuc)
+else:
+    print("Tanımsız islem!\n")
