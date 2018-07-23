@@ -1,0 +1,35 @@
+print("Hosgeldiniz, programin sizi tanimasi icin:\n")
+isim = input("Lutfen adinizi giriniz:\n")
+soyisim = input("Lutfen soyadinizi giriniz:\n")
+yas = int(input("Lutfen yasinizi giriniz:\n"))
+
+if yas<18:
+    print("Programa giris izniniz yoktur!")
+    exit(0)
+elif yas>=18:
+    print("Programa devam edebilirsiniz Sayin", isim, soyisim)
+
+    sayi1=float(input("Birinci sayiyi giriniz:\n"))
+    sayi2=float(input("İkinci sayiyi giriniz:\n"))
+    secim = input("Lutfen yapmak istediginiz islemi seciniz... (+, -, /, *, %)\n")
+
+
+    if secim=="+":
+        sonuc=sayi1+sayi2
+    elif secim=="-":
+        sonuc=sayi1-sayi2
+    elif secim=="/":
+        if sayi2!=0:
+         sonuc=sayi1/sayi2
+        else:
+         print("Bir sayi 0 ile bolunemez!\n")
+         exit(1)
+    elif secim=="*":
+        sonuc=sayi1*sayi2
+    elif secim=="%":
+        sonuc=sayi1%sayi2
+    else:
+        print("Gecersiz islem ya da sonucsuz islem!\n")
+        exit(1)
+
+print("Sonucunuz:", sonuc)
