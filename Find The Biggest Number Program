@@ -1,0 +1,18 @@
+a = []
+enb = 0
+sayac = 0
+
+len = int(input("Kac elemanli bir dizi olusturacaksiniz?\n"))
+
+while (sayac<len):
+    b=float(input("Dizinin tam sayi elemanini giriniz:"))
+    a.append(b)
+    sayac+=1
+
+for eleman in a:
+    if eleman>enb:
+        enb=eleman
+    else:
+        continue
+
+print("En buyuk deger:", enb)
