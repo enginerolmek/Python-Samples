@@ -1,0 +1,28 @@
+tamdizi = []
+tekdizi = []
+ciftdizi = []
+sayac = 0
+
+elemansayi = int(input("Kac elemanli bir dizi gireceksiniz?\n"))
+
+while (sayac<elemansayi):
+ a = int(input("Dizinizin elemanini giriniz:"))
+ tamdizi.append(a)
+ sayac+=1
+
+print("Diziniz:", tamdizi)
+
+for a in tamdizi:
+    if a%2==0:
+        if a>=0:
+         ciftdizi.append(a)
+        else:
+            continue
+    else:
+        if a>=0:
+         tekdizi.append(a)
+        else:
+            continue
+
+print("Dizinizdeki tek sayilar:", tekdizi)
+print("Dizinizdeki cift sayilar:", ciftdizi)
