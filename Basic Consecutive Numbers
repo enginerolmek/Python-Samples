@@ -1,0 +1,15 @@
+def ardisik_hesapla(artis,sinir,tepe):
+    for sonuc in range(sinir, tepe, artis):
+        sinir += artis
+        print(sinir)
+    for sonuc in range(sinir, tepe, artis):
+        tepe -= artis
+        print(tepe)
+
+
+print("Ardisik Sayma Programi:")
+artis = int(input("Lutfen kacar ardisik sayilacagini giriniz:\n"))
+sinir = int(input("Lutfen baslangic degerini giriniz:\n"))
+tepe = int(input("Lutfen bitis degerini giriniz:\n"))
+
+ardisik_hesapla(artis, sinir, tepe)
